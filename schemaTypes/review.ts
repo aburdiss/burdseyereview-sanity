@@ -12,6 +12,12 @@ export default defineType({
       validation: (Rule) => [Rule.required()],
     }),
     defineField({
+      name: 'creator',
+      title: 'Creator',
+      type: 'string',
+      validation: (Rule) => [Rule.required()],
+    }),
+    defineField({
       name: 'type',
       title: 'Type',
       type: 'reference',
