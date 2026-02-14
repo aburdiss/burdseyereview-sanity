@@ -32,6 +32,12 @@ export default defineType({
       validation: (Rule) => [Rule.required()],
     }),
     defineField({
+      name: 'date',
+      title: 'Review Date',
+      type: 'date',
+      validation: (Rule) => [Rule.required()],
+    }),
+    defineField({
       name: 'rating',
       title: 'Rating',
       type: 'number',
