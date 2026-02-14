@@ -32,6 +32,12 @@ export default defineType({
       validation: (Rule) => [Rule.required()],
     }),
     defineField({
+      name: 'rating',
+      title: 'Rating',
+      type: 'number',
+      validation: (Rule) => [Rule.min(0), Rule.max(10), Rule.required()],
+    }),
+    defineField({
       name: 'body',
       title: 'Body',
       type: 'array',
